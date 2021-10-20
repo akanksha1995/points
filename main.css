@@ -1,0 +1,226 @@
+/* main conatiner */
+.container {
+    width: 38%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+.cards-container {
+    display: flex;
+}
+
+/* single cards */
+.card {
+    width: 33.33%;
+    border-radius: 4%;
+    border: 2px solid black;
+    text-align: center;
+    margin-left:5px;
+    cursor: pointer;
+}
+
+/* change colors in selected card */
+.selected {
+    background-color: black;
+    color: white;
+}
+
+.form-container {
+    display: flex;
+    margin-top: 2%;
+}
+
+.form {
+    width: 55%;
+}
+
+.summary {
+    width: 40%;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+.form > p {
+    font-size: 0.8em;
+}
+
+.form-inputs {
+    display: grid;
+    margin-top: 15px;
+}
+
+/* sizes of different fields */
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.w-75 {
+    width: 75%;
+}
+
+.icon {
+    float: right;
+    margin-right: 2%;
+    margin-top: -10%;
+    position: relative;
+    z-index: 2;
+}
+
+a {
+    color: inherit;
+}
+
+.checkbox-container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 11px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin-top: 10%;
+}
+
+
+/* Hide the browser's default checkbox */
+.checkbox-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  /* Create a custom checkbox */
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #fff;
+    border: 1px solid grey;
+  }
+  
+  /* When the checkbox is checked, add a blue background */
+  .checkbox-container input:checked ~ .checkmark {
+    background-color: #2196F3;
+  }
+  
+  /* Create the checkmark/indicator (hidden when not checked) */
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the checkmark when checked */
+  .checkbox-container input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  /* Style the checkmark/indicator */
+  .checkbox-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+  .btn {
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .order {
+    background-color: lightgray;
+    padding: 4%;
+}
+
+  .order-details {
+      display: flex;
+      justify-content: space-between;
+  }
+
+
+/* Responsive */
+
+@media screen and (max-width: 1028px) {
+    .container {
+       width:100% ;
+       margin-left: auto;
+       margin-right:auto;
+     }
+     
+     .cards-container {
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .card{
+         width:90%;
+         margin-bottom:2%;
+     }
+   
+     .form{
+         width:90%;
+         margin-left: auto;
+         margin-right: auto;
+     }
+     .form-container{
+         
+         display: block;
+       
+         margin-left: auto;
+       margin-right:auto;
+     }
+ 
+     .summary {
+         width: 80%;
+         margin-left: auto;
+         margin-right: auto;
+         margin-top: 4%;
+     }
+     .icon {
+         float: right;
+         margin-right: 2%;
+         margin-top: -5%;
+         position: relative;
+         z-index: 2;
+     }
+   }
+ 
+   @media screen and (max-width: 600px) {
+   
+      .icon {
+          float: right;
+          margin-right: 2%;
+          margin-top: -10%;
+          position: relative;
+          z-index: 2;
+      }
+    }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Payments</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='main.js'></script>
+</head>
+<body>
+    <div class="container">
+        <h3> Get your rewards faster. Buy, Gift or Transfer Miles today!</h3>
+        <div id="card-container-id" class="cards-container">
+        
+        </div>
+        <div class="form-container">
+            <div class="form">
+            <h4> Payment Details</h4>
+            <p> We accept all major credit cards. Please ensure that you enter your details exactly as they 
+                appear on your credit card statement. All fields are required unless is indicated.</p>
+            <div class="form-content">
+                <div class ="form-inputs">
+                    <label for="cardholder-name">Cardholder name</label>
+                    <input id="cardholder-name" type="text">
+                </div>
+                 <div class="form-inputs">
+                    <label for="card-number">Card number</label>
+                    <input id ="card-number" type="text">
+                </div>
+                <div class="form-inputs w-50">
+                    <label for="expiration-date">Expiration date</label>
+                    <input id ="expiration-date" type="text" placeholder="MMYY">
+                </div>
+                 <div class="form-inputs w-50">
+                    <label for ="cvv" >CVV</label>
+                    <input id = "cvv" type="text" >
+                    <span> <i class="fa fa-lock icon"></i> </span>
+                </div>
+                <h4>Billing address</h4>
+
+                <div class ="form-inputs w-75">
+                    <label for="st-address">Street Address</label>
+                    <input id="st-address" type="text">
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="unit-number">Apt, Suite, Unit Number (Optional)</label>
+                    <input id="unit-number" type="text">
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="city">City / Town</label>
+                    <input id="city" type="text">
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="country">Country</label>
+                    <select id="country"> </select>
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="state">State / Province</label>
+                    <select id="state" > </select>
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="zip">Zip / Postal code </label>
+                    <input id="zip" type="text">
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="phone-number">Phone number</label>
+                    <input id="phone-number" type="text">
+                </div>
+
+                <div class ="form-inputs w-75">
+                    <label for="email-to">Email receipt to</label>
+                    <input id="email-to" type="text">
+                </div>
+    
+                <label class="checkbox-container">I agree to the <a href="#">terms & conditions </a>
+                    <input type="checkbox">
+                    <span class="checkmark"></span>
+                </label>
+
+                <button class = "btn w-60" type="submit">Buy Miles</button>
+            </div>
+        </div>
+        <div class ="summary">
+            <div class="order">
+                <h4>Order Summary</h4>
+                <hr>
+                <div class="order-details">
+                    <div>
+                        <span> Total miles</span>
+                    </div>
+                    <div class="miles">
+                        <span>2000</span>
+                    </div>
+                </div>
+                <div class="order-details">
+                    <div >
+                        <span> GST/HST</span>
+                    </div>
+                    <div >
+                        <span> $20.00</span>
+                    </div>
+                </div>
+                <hr>
+                <div class="order-details">
+                    <div>
+                        <span> Total cost</span>
+                    </div>
+                    <div class="total-cost">
+                        <span> $250</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
